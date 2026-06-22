@@ -1,0 +1,39 @@
+{
+    "activeFile": "testlevel.tmx",
+    "expandedProjectPaths": [
+        "."
+    ],
+    "fileStates": {
+        "LDOK_Tiles.tsx": {
+            "scaleInDock": 0.75,
+            "scaleInEditor": 1
+        },
+        "testlevel.tmx": {
+            "scale": 0.5,
+            "selectedLayer": 4,
+            "viewCenter": {
+                "x": 25,
+                "y": 608
+            }
+        }
+    },
+    "last.imagePath": "D:/Unity Projects/Lovely Dance Of Karate/Assets/sprites",
+    "map.fixedSize": false,
+    "map.lastUsedFormat": "tmx",
+    "map.tileHeight": 64,
+    "map.tileWidth": 64,
+    "openFiles": [
+        "LDOK_Tiles.tsx",
+        "testlevel.tmx"
+    ],
+    "project": "LDOK_Tile.tiled-project",
+    "recentFiles": [
+        "LDOK_Tiles.tsx",
+        "testlevel.tmx"
+    ],
+    "tileset.lastUsedFormat": "tsx",
+    "tileset.tileSize": {
+        "height": 64,
+        "width": 64
+    }
+}
