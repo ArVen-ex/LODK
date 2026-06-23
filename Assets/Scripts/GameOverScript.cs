@@ -20,6 +20,7 @@ public class GameOverScript : MonoBehaviour
     public void restartGame()
     {
         Time.timeScale = 1f;
+        MusicManager.PlayBackgroundMusic(true);
         SceneManager.LoadScene(SceneManager.GetActiveScene().name);
     }
 
@@ -30,8 +31,7 @@ public class GameOverScript : MonoBehaviour
         {
             
             GameOverScreen.SetActive(true);
-
-            // Optional: Freeze the game physics/movement so the player stops falling
+            MusicManager.PauseBackgroundMusic();
             Time.timeScale = 0f;
         }
     }
