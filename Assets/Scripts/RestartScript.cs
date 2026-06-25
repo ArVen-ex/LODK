@@ -5,7 +5,7 @@ public class RestartScript : MonoBehaviour
 {
     public void OnRestartClick()
     {
-        SceneManager.LoadScene("TitleScene");
+        SceneManager.LoadScene("TitleScreen");
     }
     public void OnExitClick()
     {

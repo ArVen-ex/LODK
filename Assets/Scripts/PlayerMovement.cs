@@ -97,7 +97,6 @@ public class PlayerMovement : MonoBehaviour
                 //tap for half power 
                 rb.linearVelocity = new Vector2(rb.linearVelocityX, rb.linearVelocityY * 0.5f);
                 smokeFX.Play();
-                jumpRemain--;
             }
         }
 
@@ -165,10 +164,10 @@ public class PlayerMovement : MonoBehaviour
     {
         if (isWallSliding)
         {
-            isWallJumping = true;
+           // isWallJumping = true;
             wallJumpDirection = -transform.localScale.x;
             wallJumpTimer = wallJumpTime;
-            CancelInvoke(nameof(CancelWallJump));
+            //CancelInvoke(nameof(CancelWallJump));
         }else if (wallJumpTimer > 0f)
         {
             wallJumpTimer -= Time.deltaTime;

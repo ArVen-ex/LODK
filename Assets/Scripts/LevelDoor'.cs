@@ -1,5 +1,7 @@
+using System.Collections;
 using UnityEngine;
 using UnityEngine.SceneManagement;
+using UnityEngine.UI;
 
 public class LevelDoor : MonoBehaviour
 {
@@ -7,7 +9,21 @@ public class LevelDoor : MonoBehaviour
     public bool isUnlocked = false; // Starts locked!
     public string nextSceneName = "SampleScene"; //change this to game complete screen
 
+    [Header("UI Settings")]
+    public Text lockedText;
+    public float msgDisplayTime = 2.4f;
+
+
     public StopwatchController leveltimer;
+
+
+    private void Start()
+    {
+        if (lockedText != null)
+        {
+            lockedText.text = "";
+        }
+    }
     private void OnTriggerEnter2D(Collider2D other)
     {
         // If the player touches the door AND the controller has unlocked it...
@@ -23,7 +39,18 @@ public class LevelDoor : MonoBehaviour
         }
         else if (!isUnlocked && other.CompareTag("Player"))
         {
-            Debug.Log("The door is locked. Find the rest of the items!");
+            if (lockedText != null)
+            {
+                StopAllCoroutines();
+                StartCoroutine(ShowLockedMessage());
+            }
         }
+    }
+
+    private IEnumerator ShowLockedMessage()
+    {
+        lockedText.text = "The door is locked. Find the rest of the items!";
+        yield return new WaitForSeconds(msgDisplayTime);
+        lockedText.text = "";
     }
 }
