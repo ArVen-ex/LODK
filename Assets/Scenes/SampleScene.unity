@@ -131,6 +131,10 @@ PrefabInstance:
       propertyPath: m_Sprite
       value: 
       objectReference: {fileID: -3914899177218246955, guid: 6a23cb3d2010f164fba1fcad69d9412d, type: 3}
+    - target: {fileID: 5300889080782824867, guid: 47c77314fc06f2e4bbaa87857c5eb0a0, type: 3}
+      propertyPath: m_Radius
+      value: 0.35
+      objectReference: {fileID: 0}
     - target: {fileID: 6991103456217111801, guid: 47c77314fc06f2e4bbaa87857c5eb0a0, type: 3}
       propertyPath: m_LocalScale.x
       value: 2
@@ -6964,7 +6968,7 @@ MonoBehaviour:
   nextSceneName: EndingScreen
   lockedText: {fileID: 1010333692}
   msgDisplayTime: 2.4
-  leveltimer: {fileID: 0}
+  leveltimer: {fileID: 7986584131788920185}
 --- !u!61 &1225935355
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -8706,6 +8710,17 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 2075937464208256924, guid: 0e308d8a7ea964d4d867c9ff4e0c5aea, type: 3}
   m_PrefabInstance: {fileID: 7986584131788920183}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &7986584131788920185 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 2835231747357195452, guid: 0e308d8a7ea964d4d867c9ff4e0c5aea, type: 3}
+  m_PrefabInstance: {fileID: 7986584131788920183}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 21e4c848ee0c63b4b826cdca1c3b5e60, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::StopwatchController
 --- !u!1001 &8889378468209369871
 PrefabInstance:
   m_ObjectHideFlags: 0

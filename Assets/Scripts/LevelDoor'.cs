@@ -32,8 +32,10 @@ public class LevelDoor : MonoBehaviour
 
             if (leveltimer != null)
             {
-                leveltimer.StopClockAndSave();
+                leveltimer.StopClockAndSave(); //make sure to add the stopwatch controller to to the this door script
             }
+
+
             AudioFXManager.Play("Door");
             SceneManager.LoadScene(nextSceneName);
         }
