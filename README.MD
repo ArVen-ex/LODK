@@ -1,5 +1,5 @@
 # Lovely Dance Of Karate 
-![Project Screenshot](Lovely Dance Of Karate\LDOK_icon.JPG)
+![Project Screenshot]("D:\Unity Projects\Lovely Dance Of Karate\LDOK_icon.jpg")
 
 A 2D time-trial based platformer!
 
