@@ -1,4 +1,5 @@
 # Lovely Dance Of Karate 
+![Project Screenshot](Lovely Dance Of Karate\LDOK_icon.JPG)
 
 A 2D time-trial based platformer!
 
